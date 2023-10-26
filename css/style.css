@@ -20,10 +20,16 @@
 
 .container{
     margin: 0 auto;
-    width: 1000px;
+    width: 1200px;
 }
 
 .clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix2::after{
     content: "";
     display: table;
     clear: both;
@@ -65,10 +71,42 @@ h1{
 .columns > *{
     background-color: rgb(0, 0, 41);
     float: left;
-    width: calc(1000px / 3 - 40px);
+    width: calc(1200px / 3 - 40px);
     height: 100px;
     margin: 20px 20px;
 
 
 }
 
+
+.fotoid{
+    width: 100px;
+    height: 100px;
+}
+
+
+div h3{
+    color: white;
+    width: calc(360px / 2 - 24px);
+    margin: 10px 12px;
+}
+
+div.cards p{
+    font-weight: 300;
+    color: white;
+    margin: 0px 12px;
+    width: calc(360px / 2);   
+}
+
+
+.cards *{
+    float: left;
+}
+
+
+div.cards a{
+    color: rgb(83, 152, 255);
+    margin-top: 10px;
+    margin-left: 12px;
+    text-decoration: none;
+}
